@@ -42,14 +42,31 @@ Exemplo (bem besta, acho que vocês podem fazer melhor)
 - criar um arquivo chamado `olamundo.txt`
 
 2. Com o comando `git status`, conseguimos verificar o status geral do seu projeto. Provavelmente ele te informará que há um arquivo novo chamado `olamundo.txt` que ainda não foi versionado.
-3. Vamos adicionar esse arquivo para ser versionado. Primeiro, adicione-o na *staging area* com o comando `git add olamundo.txt` e repita o comando `git status` para verificar se o arquivo foi adicionado.
-4. Vamos registrar essa versão do projeto com o comando `git commit"
+3. Vamos adicionar esse arquivo para ser versionado. Primeiro, adicione-o na *staging area* e vamos verificar se o arquivo foi adicionado.
+
+```sh
+git add olamundo.txt
+git status
+```
+
+4. Vamos registrar essa versão do projeto:
+
+```sh
+git commit
+```
 
 Não se esqueça das [boas práticas](https://cbea.ms/git-commit/) para escrever sua mensagem de commit!
 
-5. Ao registrar essa versão do projeto, tenha em mente que esse registro foi local. Portanto, o seu fork no GitHub ainda não foi atualizado com suas mudanças. Para isso, vamos entrar o comando `git push origin master`
+5. Ao registrar essa versão do projeto, tenha em mente que esse registro foi local. Portanto, o seu fork no GitHub ainda não foi atualizado com suas mudanças. Para atualizar seu repositório remoto entre com o comando:
 
-## Exercício 3: atualizar as mudanças da upstream
+```sh
+git push origin master
+```
+## Exercício 3: enviar a feature `olamundo` para a upstream
+
+Entre no seu fork no GitHub. O próprio site vai comparar seu fork com o upstream e vai te sugerir que você envie um *pull request*. Escreva detalhadamente as mudanças que você fez no projeto e solicite a inserção da sua feature na upstream com o *pull request*. Depois que os analistas revisarem seu código, nós vamos (ou não) autorizar o merge :)
+
+## Exercício 4: atualizar as mudanças da upstream
 
 0. Pode ser que você tenha mudanças no seu fork que você ainda não copiou para sua máquina local. Então, primeiro atualize sua máquina local com as mudanças do seu fork:
 
