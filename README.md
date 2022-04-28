@@ -52,14 +52,14 @@ Exemplo (bem besta, acho que vocês podem fazer melhor)
 
 ```sh
 git fetch origin master
-git rebase origin/master
+git merge origin/master
 ```
 
 1. Atualizar as mudanças na sua máquina local
 
 ```sh
 git fetch upstream master
-git rebase upstream/master
+git merge upstream/master
 ```
 
 2. Subir essas mudanças para seu fork
