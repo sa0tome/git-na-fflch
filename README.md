@@ -43,7 +43,10 @@ Exemplo (bem besta, acho que vocês podem fazer melhor)
 
 2. Com o comando `git status`, conseguimos verificar o status geral do seu projeto. Provavelmente ele te informará que há um arquivo novo chamado `olamundo.txt` que ainda não foi versionado.
 3. Vamos adicionar esse arquivo para ser versionado. Primeiro, adicione-o na *staging area* com o comando `git add olamundo.txt` e repita o comando `git status` para verificar se o arquivo foi adicionado.
-4. Vamos registrar essa versão do projeto com o comando `git commit -m "<insira sua mensagem de commit>"`
+4. Vamos registrar essa versão do projeto com o comando `git commit"
+
+Não se esqueça das [boas práticas](https://cbea.ms/git-commit/) para escrever sua mensagem de commit!
+
 5. Ao registrar essa versão do projeto, tenha em mente que esse registro foi local. Portanto, o seu fork no GitHub ainda não foi atualizado com suas mudanças. Para isso, vamos entrar o comando `git push origin master`
 
 ## Exercício 3: atualizar as mudanças da upstream
