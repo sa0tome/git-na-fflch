@@ -46,5 +46,24 @@ Exemplo (bem besta, acho que vocês podem fazer melhor)
 4. Vamos registrar essa versão do projeto com o comando `git commit -m "<insira sua mensagem de commit>"`
 5. Ao registrar essa versão do projeto, tenha em mente que esse registro foi local. Portanto, o seu fork no GitHub ainda não foi atualizado com suas mudanças. Para isso, vamos entrar o comando `git push origin master`
 
-## Exercício 2: desenvolver uma feature `olamundo` e enviar para a upstream
-1. Ao entrar no seu fork, automaticamente o GitHub irá comparar seu projeto com a upstream e vai te sugerir criar um *pull request*.
+## Exercício 3: atualizar as mudanças da upstream
+
+0. Pode ser que você tenha mudanças no seu fork que você ainda não copiou para sua máquina local. Então, primeiro atualize sua máquina local com as mudanças do seu fork:
+
+```sh
+git fetch origin master
+git rebase origin/master
+```
+
+1. Atualizar as mudanças na sua máquina local
+
+```sh
+git fetch upstream master
+git rebase upstream/master
+```
+
+2. Subir essas mudanças para seu fork
+
+```sh
+git push origin master
+```
