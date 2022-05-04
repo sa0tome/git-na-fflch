@@ -1,5 +1,5 @@
 # git-na-fflch
-Repositório para exercitar nossos conhecimentos em git na FFLCH
+Repositório para exercitar nossos conhecimentos em git na FFLCH. Faz parte [desta]() apresentação de git.
 
 ## Exercício 1: fazer um fork e clonar o repositório para a máquina local
 
@@ -42,6 +42,7 @@ Exemplo (bem besta, acho que vocês podem fazer melhor)
 - criar um arquivo chamado `olamundo.txt`
 
 2. Com o comando `git status`, conseguimos verificar o status geral do seu projeto. Provavelmente ele te informará que há um arquivo novo chamado `olamundo.txt` que ainda não foi versionado.
+
 3. Vamos adicionar esse arquivo para ser versionado. Primeiro, adicione-o na *staging area* e vamos verificar se o arquivo foi adicionado.
 
 ```sh
@@ -60,30 +61,37 @@ Não se esqueça das [boas práticas](https://cbea.ms/git-commit/) para escrever
 5. Ao registrar essa versão do projeto, tenha em mente que esse registro foi local. Portanto, o seu fork no GitHub ainda não foi atualizado com suas mudanças. Para atualizar seu repositório remoto entre com o comando:
 
 ```sh
-git push origin master
+git push origin main
 ```
 ## Exercício 3: enviar a feature `olamundo` para a upstream
 
-Entre no seu fork no GitHub. O próprio site vai comparar seu fork com o upstream e vai te sugerir que você envie um *pull request*. Escreva detalhadamente as mudanças que você fez no projeto e solicite a inserção da sua feature na upstream com o *pull request*. Depois que os analistas revisarem seu código, nós vamos (ou não) autorizar o merge :)
+Entre no seu fork no GitHub. O próprio site vai comparar seu fork com o upstream e vai te sugerir que você envie um *pull request*. Solicite a inserção da sua feature na upstream com o *pull request*. Depois que os analistas revisarem seu código, nós vamos (ou não) autorizar o merge :)
 
 ## Exercício 4: atualizar as mudanças da upstream
 
 0. Pode ser que você tenha mudanças no seu fork que você ainda não copiou para sua máquina local. Então, primeiro atualize sua máquina local com as mudanças do seu fork:
 
 ```sh
-git fetch origin master
-git merge origin/master
+git fetch origin main
+git merge origin/main
 ```
 
-1. Atualizar as mudanças na sua máquina local
+1. Atualizar as mudanças da upstream na sua máquina local
 
 ```sh
-git fetch upstream master
-git merge upstream/master
+git fetch upstream main
+git merge upstream/main
 ```
 
 2. Subir essas mudanças para seu fork
 
 ```sh
-git push origin master
+git push origin main
 ```
+
+# Créditos e agradecimentos
+Apresentado e desenvolvido por [@sa0tome](https://github.com/sa0tome)
+
+Agradecimentos especiais a [@thiagogomesverissimo](https://github.com/thiagogomesverissimo), [@acesarfs](https://github.com/acesarfs), [@ricardfo](https://github.com/ricardfo) e [@girol](https://github.com/girol)
+
+Um grande salve pra [@uspdev](https://uspdev.github.io)
